@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/one', [TaskFirstController::class, 'index']);
+Route::get('/', [TaskFirstController::class, 'index']);
 Route::get('/two', [TaskTwoController::class, 'index']);
 Route::get('/ticket', [TaskTicketBarcodeController::class, 'index']);
 
